@@ -210,3 +210,10 @@ if (whatsappBtn) {
         });
     }
 }
+// كود لإخفاء شاشة التحميل بعد 2 ثواني كأقصى حد
+setTimeout(() => {
+    const loader = document.querySelector('.loader') || document.querySelector('#preloader'); // استخدم الكلاس أو ID ديال الـ loader اللي عندك
+    if (loader) {
+        loader.style.display = 'none';
+    }
+}, 2000);
