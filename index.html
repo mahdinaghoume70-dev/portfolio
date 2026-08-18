@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Mahdi - Développeur Full Stack BTS à Essaouira. Création de sites web, applications et solutions digitales.">
+    <title>Mahdi — Développeur Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float" id="whatsappBtn" aria-label="Contacter sur WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <div class="whatsapp-icon">
+        <svg viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </div>
+    <span class="whatsapp-badge">1</span>
+</div>
+
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader-ring">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+        <p class="loader-text">Chargement...</p>
+    </div>
+
+    <!-- Particules -->
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo" aria-label="Retour à l'accueil">
+                <img src="images/logo.png" alt="Logo Mahdi" class="logo-img">
+                <span class="logo-text">Mahdi</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+          
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil" aria-label="Accueil">
+        <div class="hero-bg-overlay"></div>
+        <div class="screen-effect" aria-hidden="true">
+            <div class="scanlines"></div>
+            <div class="screen-glow"></div>
+            <div class="screen-flicker"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+
+
+                <div class="hero-frameworks">
+                    <div class="framework-item" title="React">
+                        <img src="images/react.png" alt="React">
+                    </div>
+                    <div class="framework-item" title="Laravel">
+                        <img src="images/laravel.png" alt="Laravel">
+                    </div>
+                    <div class="framework-item" title="Python">
+                        <img src="images/python.png" alt="Python">
+                    </div>
+                    <div class="framework-item" title="node">
+                        <img src="images/node.png" alt="node">
+                    </div>
+                    <div class="framework-item" title="java">
+                        <img src="images/java.png" alt="java">
+                    </div>
+                    <div class="framework-item" title="HTML5">
+                        <img src="images/html.png" alt="HTML5">
+                    </div>
+                    <div class="framework-item" title="CSS3">
+                        <img src="images/css.png" alt="CSS3">
+                    </div>
+                    <div class="framework-item" title="JavaScript">
+                        <img src="images/javascript.png" alt="JavaScript">
+                    </div>
+                    <div class="framework-item" title="Git">
+                        <img src="images/git.png" alt="Git">
+                    </div>
+
+                    <div class="framework-item" title="MySQL">
+                        <img src="images/mysql.png" alt="MySQL">
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Je suis développeur web Full Stack spécialisé dans la création de sites
+                    modernes et d'applications métiers. J'accompagne entreprises et entrepreneurs
+                    dans leur transformation digitale avec des solutions robustes et scalables
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Mes services</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red" aria-hidden="true"></span>
+                        <span class="dot yellow" aria-hidden="true"></span>
+                        <span class="dot green" aria-hidden="true"></span>
+                        <span class="code-filename">mahdi.dev</span>
+                    </div>
+                    <div class="code-body">
+                        <p><span class="code-keyword">const</span> <span class="code-var">dev</span> = {</p>
+                        <p class="code-indent">name: <span class="code-string">'Mahdi'</span>,</p>
+                        <p class="code-indent">role: <span class="code-string">'Full Stack'</span>,</p>
+                        <p class="code-indent">location: <span class="code-string">'Safi, Maroc'</span>,</p>
+                        <p class="code-indent">passion: <span class="code-bool">true</span>,</p>
+                        <p class="code-indent">available: <span class="code-bool">true</span></p>
+                        <p>};</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-label="Services">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Services</span></h2>
+          
+            <div class="services-grid">
+    
+    <!-- 1. Site Vitrine -->
+    <div class="service-card reveal" style="background-image: url('images/sitev.jpg');">
+        
+        <h3>Site Vitrine</h3>
+        <div class="service-line"></div>
+        <p>Présentez votre activité avec élégance. Design sur mesure, 
+            responsive et optimisé pour le référencement.</p>
+    </div>
+
+    <!-- 2. E-Commerce -->
+    <div class="service-card reveal" style="background-image: url('images/ecommerce.jpeg');">
+       
+        <h3>E-Commerce</h3>
+        <div class="service-line"></div>
+        <p>Boutique complète avec panier, paiement sécurisé et 
+            dashboard admin pour gérer vos produits en autonomie.</p>
+    </div>
+
+    <!-- 3. Application Web -->
+    <div class="service-card reveal" style="background-image: url('images/app.jpg');">
+       
+        <h3>Application Web</h3>
+        <div class="service-line"></div>
+        <p>Solutions métiers personnalisées : gestion, réservations,
+             CRM. Authentification sécurisée et rôles.</p>
+    </div>
+
+    <!-- 4. Intégration Maquette -->
+    <div class="service-card reveal" style="background-image: url('images/mqt.png');">
+        
+        <h3>Intégration Maquette</h3>
+        <div class="service-line"></div>
+        <p>Votre design Figma transformé en code propre. Animations 
+            fluides, responsive et fidélité graphique.</p>
+    </div>
+
+    <!-- 5. Correction & Refonte -->
+    <div class="service-card reveal" style="background-image: url('images/debug.jpeg');">
+        
+        <h3>Correction & Refonte</h3>
+        <div class="service-line"></div>
+        <p>Debug, modernisation et optimisation de votre site existant.
+             Performance, SEO et nouvelle identité visuelle.</p>
+    </div>
+
+    <!-- 6. Portfolio / CV -->
+    <div class="service-card reveal" style="background-image: url('images/ptcv.jpeg');">
+        
+        <h3>Portfolio & CV</h3>
+        <div class="service-line"></div>
+        <p>Démarquez-vous avec un portfolio unique. Animations, 
+            dark mode et formulaire de contact intégré.</p>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+  
+   
+    <!-- Projets -->
+    <section class="projets" id="projets" aria-label="Projets">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Projets</span></h2>
+            <div class="projets-grid">
+                <div class="projet-card reveal">
+                  
+                  <h3>Platforme Scolaire</h3>
+                    <p>Plateforme complète : élèves, profs, notes, absences et emploi du temps.</p>
+                    <div class="projet-tags">
+                        <span>React</span><span>Laravel</span><span>MySQL</span>
+                    </div>
+                 
+                </div>
+                <div class="projet-card reveal">
+                   
+                    <h3>E-Commerce</h3>
+                    <p>Boutique en ligne avec panier, paiement Stripe et dashboard admin.</p>
+                    <div class="projet-tags">
+                        <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+                    </div>
+                
+                </div>
+                <div class="projet-card reveal">
+                    
+                    <h3>Facturation & Stock</h3>
+                    <p>Système de gestion de stock avec génération de factures PDF.</p>
+                    <div class="projet-tags">
+                        <span>PHP</span><span>MySQL</span><span>Phyton</span>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+   <section class="contact" id="contact" aria-label="Contact">
+    <div class="container">
+        <h2 class="section-title">Me <span>Contacter</span></h2>
+
+        <div class="contact-wrapper">
+            <!-- ===== Infos de contact ===== -->
+            <div class="contact-info">
+                <a href="mailto:mahdi@email.com" class="contact-card reveal">
+                   
+                    <div>
+                        <h3>Email</h3>
+                        <p>mahdinaghoume70@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="tel:+212600000000" class="contact-card reveal">
+                  
+                    <div>
+                        <h3>Téléphone / WhatsApp</h3>
+                        <p>+2126 89329055</p>
+                    </div>
+                </a>
+
+                <div class="contact-card reveal">
+                  
+                    <div>
+                        <h3>Localisation</h3>
+                        <p>Safi , Maroc</p>
+                    </div>
+                </div>
+
+                <div class="contact-card reveal">
+                    
+                    <div>
+                        <h3>Disponibilité</h3>
+                        <p>Lun – Sam : 9h à 19h</p>
+                    </div>
+                </div>
+                        <p class="contact-subtitle">
+            Un projet en tête ? Discutons-en — je réponds sous 24h.
+        </p>
+
+            </div>
+
+            <!-- ===== Formulaire ===== -->
+            <form class="contact-form reveal" action="https://formspree.io/f/xkjwqpje" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service souhaité</label>
+                    <select id="service" name="service" required>
+                        <option value="">— Choisissez un service —</option>
+                        <option value="site-vitrine">Site Vitrine</option>
+                        <option value="ecommerce">Site E-commerce</option>
+                        <option value="app-web">Application Web</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+               <a href="#accueil" class="nav-logo" aria-label="Retour à l'accueil">
+                <img src="images/logo.png" alt="Logo Mahdi" class="logo-img">
+            </a>
+            <span>Mahdi — Développeur Web</span>
+        </div>
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <p>📧 mahdi@email.com</p>
+            <p>📞 +212 6XX-XXXXXX</p>
+            <p>📍 Essaouira, Maroc</p>
+        </div>
+        <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Mahdi — Portfolio. Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
